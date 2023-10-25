@@ -1,7 +1,7 @@
 # Task 1:
 
 all_factors: list[tuple[int, int]] = []
-def generate_factors(start: int, end:int):
+def generate_factors(start: int, end:int): # Generator function
     for number in range(start, end):
         yield (number, int(end/number))
 
